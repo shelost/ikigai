@@ -1,0 +1,73 @@
+$blue: #0184FF;
+$darkblue: #0032ED;
+
+*{
+    transition: 0.2s ease;
+    font-family: Questrial, sans-serif;
+}
+
+#app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 40vw;
+    height: 40vw;
+    border-radius: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+input{
+    font-size: 2vw;
+    width: 60%;
+    padding: 1vw;
+    border: none;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 3vw;
+    text-align: center;
+    &:hover{
+        background-color: rgba(0,0,0,0.2);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+button{
+    border: none;
+    background-color: $blue;
+    font-size: 2vw;
+    padding: 1vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    border-radius: 2vw;
+    color: white;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        background-color: $darkblue;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hidden{
+    display: none;
+}

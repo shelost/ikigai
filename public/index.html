@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> QB </title>
+    <link href = './CSS/landing.css' rel = 'stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <div id = 'app'>
+        <div class = 'container'>
+
+            <h1> Join a Room: </h1>
+            <div class = 'flex'>
+                <input id = 'room' type = 'text' placeholder = 'Room ID...'>
+                <button id = 'join'>  Join </button>
+            </div>
+            
+            <h1> Create a Room: </h1>
+            <button id = 'new'> Create </button>
+        </div>
+
+        <div class = 'container hidden'>
+            <div class = 'flex'>
+                <input id = 'name' type = 'text' placeholder = "Name?">
+                <button id = 'go'> Go </button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src = './JS/functions.js'></script>
+<script src = './JS/socket.js'></script>
+<script src = './JS/landing.js'></script>
+
+</html>
+

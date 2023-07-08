@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> QB </title>
+    <link href = './CSS/style.css' rel = 'stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Poppins&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <div id = 'app' class = 'app-dorm'>
+
+        <div id = 'info'>
+            <h1 id = 'room'></h1>
+            <h1 id = 'name'></h1>
+            <div id = 'bubbles'>
+                <h2 class = 'bubble'> Heewon </h2>
+            </div>
+        </div>
+
+        <div id = 'message-box'>
+            <h1 id = 'message'> This is a message! </h1>
+        </div>
+
+        <div class = 'container'>
+            <div class = 'header'>
+                <h1 id = 'set'> Virtual Bowl </h1>
+                <h1 id = 'diff'> (Prototype) </h1>
+            </div>
+            <div id = 'question'>
+                <p id = 'text'>
+                    <span id = 'power'></span>
+                    <span id = 'ten'></span>
+                </p>
+            </div>
+        </div>
+
+        <div class = 'box'>
+
+            <div id = 'buzzbox' class = 'col hidden'>
+                <button id = 'buzz'> BUZZ </button>
+                <button id = 'next'> Next </button>
+            </div>
+            
+            <div class = 'flex hidden' id = 'input'>
+                <input id = 'answer' type = 'text'>
+                <button id = 'submit'> TRY </button>
+            </div>
+
+            <button id = 'read'> Read </button>
+            
+        </div>
+
+
+    </div>
+
+    <div id = 'corner'>
+        <button id = 'finish'> Finish Game </button>
+    </div>
+
+    <div id = 'popup' class = 'popup-dorm invisible'>
+        <button class = 'ok'> OK </button>
+    </div>
+
+    <div id = 'slide' class = 'slide-dorm'>
+        <div class = 'chat-head'>
+            <h1> Chat </h1>
+        </div>
+        <div id = 'chat'>
+            <div class = 'chat-tem'>
+                <p> This is the chat. </p>
+                <h3> Team Virtual Bowl </h3>
+            </div>
+        </div>
+        <div id = 'toggle'>
+            <svg id="svg" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+
+                <g>
+                    <rect x="0.5" y="0.5"fill = 'none' />
+                    <path id = 'arrow' d="M369.49,257.03l-159.24,132c-2.24,1.86-5.53,1.7-7.59-0.35l-24.86-24.87c-2.33-2.33-2.17-6.16,0.34-8.29
+                    l116.57-98.66c2.64-2.23,2.67-6.29,0.06-8.56L178.1,146.83c-2.47-2.15-2.6-5.93-0.29-8.24l24.86-24.86
+                    c2.08-2.08,5.4-2.21,7.63-0.31l159.23,134.98C372.21,250.66,372.19,254.8,369.49,257.03z"/>
+                </g>
+
+            </svg>   
+        </div>
+        <div id = 'chat-inputbox'>
+            <textarea id = 'chat-input' type = 'text' placeholder = 'Type a message...'></textarea>
+            <button id = 'chat-send'>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500">  
+                         <path fill = 'white' id = 'icon' d="M387.97,260.01l-24.87,24.86c-2.33,2.33-6.16,2.17-8.29-0.35l-74.17-87.63v198.43c0,2.31-1.88,4.19-4.19,4.19
+                        h-50.13c-2.32,0-4.19-1.88-4.19-4.19V197.18l-76,87.39c-2.15,2.47-5.94,2.6-8.25,0.29L113.02,260c-2.07-2.08-2.21-5.4-0.31-7.64
+                        L247.68,93.13c2.27-2.67,6.41-2.65,8.65,0.05l132,159.24C390.18,254.66,390.03,257.95,387.97,260.01z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src = './JS/functions.js'></script>
+<script src = './JS/socket.js'></script>
+<script src = './JS/script.js'></script>
+
+</html>
